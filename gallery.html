@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Samikshya Clothing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SAMIKSHYA</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="clothingcollection.html">Collections</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="Malesection.html">Men</a></li>
+                <li><a href="Femalesection.html">Women</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="gallery-section">
+        <div class="container">
+            <h1>Fashion Gallery</h1>
+            <div class="gallery-grid">
+                <img src="pimage1.jpeg" alt="Men's fashion" onclick="openLightbox(this)">
+                <img src="pimage2.jpeg" alt="Women's outfit" onclick="openLightbox(this)">
+                <img src="pimage3.jpeg" alt="Casual wear" onclick="openLightbox(this)">
+                <img src="pimage4.jpeg" alt="College fashion" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-image" src="" alt="">
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>SAMIKSHYA Clothing</h3>
+                    <p>Fashion for the New Generation</p>
+                </div>
+                <div>
+                    <p>Kathmandu, Nepal</p>
+                    <p><a href="mailto:info@samikshyaclothing.com">info@samikshyaclothing.com</a></p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="clothingcollection.html">Collections</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="Malesection.html">Men</a>
+                    <a href="Femalesection.html">Women</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="sitemap.html">Sitemap</a>
+                </div>
+            </div>
+            <div class="copyright">
+                Designed by Miki | © 2026 Samikshya Clothing
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
